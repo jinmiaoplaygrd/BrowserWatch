@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrowserWatch</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <div class="heading">
+        <div>
+          <h1>BrowserWatch</h1>
+          <p>Private local browsing memory</p>
+        </div>
+        <label class="switch" title="Enable monitoring">
+          <input id="enabled" type="checkbox">
+          <span></span>
+        </label>
+      </div>
+
+      <label for="serverUrl">Companion URL</label>
+      <input id="serverUrl" type="url" spellcheck="false">
+
+      <label for="token">Companion token</label>
+      <input id="token" type="password" autocomplete="off">
+
+      <label class="option">
+        <input id="blockJsdelivr" type="checkbox">
+        Block cdn.jsdelivr.net while monitoring
+      </label>
+
+      <button id="save" type="button">Save settings</button>
+      <p id="status" class="status" role="status"></p>
+      <p class="privacy">Only article-like pages are sent to your loopback companion. CDN blocking may disable optional controls on some sites.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

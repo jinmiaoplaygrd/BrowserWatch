@@ -1,0 +1,8 @@
+node_modules/
+browserwatch-memory/
+.harness/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store

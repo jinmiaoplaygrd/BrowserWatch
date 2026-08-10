@@ -1,0 +1,89 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 340px;
+}
+
+main {
+  padding: 18px;
+}
+
+.heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.heading p,
+.privacy {
+  color: #777;
+  font-size: 12px;
+  margin: 3px 0 16px;
+}
+
+label:not(.switch):not(.option) {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 10px 0 4px;
+}
+
+.option {
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+input[type="url"],
+input[type="password"] {
+  box-sizing: border-box;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  background: #0969da;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 12px;
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.switch input {
+  height: 20px;
+  width: 20px;
+}
+
+.status {
+  border-left: 3px solid #777;
+  font-size: 12px;
+  margin: 14px 0 0;
+  min-height: 18px;
+  padding-left: 8px;
+}
+
+.status[data-state="success"] {
+  border-color: #1a7f37;
+}
+
+.status[data-state="error"] {
+  border-color: #cf222e;
+}
+
+.status[data-state="working"] {
+  border-color: #bf8700;
+}

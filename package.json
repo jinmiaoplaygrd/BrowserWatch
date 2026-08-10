@@ -1,0 +1,20 @@
+{
+  "name": "browserwatch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Privacy-conscious Edge browsing memory extension and local companion",
+  "scripts": {
+    "start": "node companion/server.js",
+    "test": "node --test",
+    "check": "node scripts/check.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@agentclientprotocol/sdk": "^1.3.0",
+    "mammoth": "^1.8.0",
+    "pdf-parse": "^1.1.1",
+    "undici": "^6.21.3"
+  }
+}
